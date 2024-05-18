@@ -10,32 +10,33 @@
 		<link href="/dist/output.css" rel="stylesheet" />
 		<title>THE TECH FIX</title>
 	</head>
-	<body class="bg-gray-100">
+	<body class="bg-purple-300">
 		<!-- My header section social icons,search field and button,site heading and motto and navbar -->
 		<header>
-			<div class="top-most flex flex-wrap justify-between items-center">
-				<div class="w-1/3">
-					<i class="fa-brands fa-facebook"></i>
-					<i class="fa-brands fa-pinterest-p"></i>
+			<div class="top-most flex justify-between items-center">
+				<div class="w-1/3 flex justify-start">
+					<i class="fa-brands fa-facebook mr-2"></i>
+					<i class="fa-brands fa-pinterest-p mr-2"></i>
 					<i class="fa-brands fa-linkedin"></i>
 				</div>
-				<div class="w-1/3">
+				<div class="w-1/3 text-center">
 					<h2
-						class="text-center text-violet-600 text-2xl tracking-wider font-monospace font-bold"
+						class=" text-violet-600 text-2xl tracking-wider font-monospace font-bold"
 					>
 						The Tech Fix
 					</h2>
-					<h4 class="text-center text-sm tracking-wider">
+					<h4 class="text-sm tracking-wider">
 						Your Source for the Latest Buzz in Gadgets and Gizmos!
 					</h4>
 				</div>
-				<div class="w-1/3">
+				<div class="w-1/3 flex justify-end">
 					<input type="text" id="searchInput" placeholder="Search..." />
 					<button type="button" onclick="SearchFunction()">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</button>
 				</div>
-				<div>
+            </div>
+				<div class="my-5 bg-white max-w-lg mx-auto rounded shadow-lg">
 					<nav
 						class="flex justify-center items-center h-full rounded-md border-purple-950 px-5 place-content-center"
 					>
@@ -51,122 +52,135 @@
 						</ul>
 					</nav>
 				</div>
-			</div>
+			
 		</header>
 		<!-- That is the header section of my document -->
 
-		<div class="bg-[url('/hero.jpg')] w-[900px] h-[900px] bg-cover bg-center">
-			<h1 class="bg-purple-400 h-20 text-center align-items-center w-10">
+		<div class="relative bg-cover bg-center" style="background-image: url('/hero.jpg'); width: 100%; height: 900px;">
+            <div class="absolute inset-0 flex items-center justify-center">
+			<h1 class="bg-violet-500 bg-opacity-75 p-10 h-100 shadow-lg rounded text-5xl font-bold text-center flex items-center justify-center px-4 max-w-lg mx-auto">
 				BYTE BY BYTE
 			</h1>
+            </div>
 		</div>
 
 		<!-- trending topics -->
 		<div>
-			<h2 class="font-bold text-lg text-purple-400">Trending topics</h2>
+			<h2 class="text-center font-bold text-lg text-purple-400 bg-white rounded shadow-lg mt-4 max-w-lg mx-auto">Trending topics</h2>
 		</div>
 		<!-- mobile phones card -->
+                <div class="flex flex-wrap justify-center">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg mx-2 my-4 bg-white">
+        <img class="w-full" src="mobilephones.jpg" alt="mobilephones">
+        <div class="px-6 py-4">
+            <div class="text-sm border-2 border-white text-white space-x-2 bg-purple-950 text-center">
+                Mobile Phones
+            </div>
+            <div class="font-bold text-xl mb-2">Top Releases 2024</div>
+            <p class="text-gray-700 text-base">
+                We tested the best phones on the market, from iPhone to Android, and these are the top picks for power users, content creators, budget shoppers, and more.
+            </p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+            <button class="bg-white border-2 border-purple-950 text-purple-800 py-2 px-4 rounded-full">
+                Read more
+            </button>
+        </div>
+    </div>
+    <!-- mobile phones card end here  -->
 
-		<div class="bg-white">
-			<img src="mobilephones.jpg" alt="mobilephones" class="h-100 w-100" />
-			<h3
-				class="text-sm border-2 border-white text-white space-x-2 bg-purple-950"
-			>
-				Mobile Phones
-			</h3>
-			<h2 class="font-bold">Top Releases 2024</h2>
-			<p>
-				We tested the best phones on the market, from iPhone to Android, and
-				these are the top picks for power users, content creators, budget
-				shoppers, and more.
-			</p>
-			<button class="bg-white border-2 border-purple-950 text-purple-800">
-				Read more
-			</button>
-		</div>
+    <!-- tablets card -->
+    <div class="max-w-sm rounded overflow-hidden shadow-lg mx-2 my-4 bg-white">
+        <img src="tablet.jpg" alt="tablet" class="w-full">
+        <div class="px-6 py-4">
+            <div class="text-center text-sm border-2 border-white text-white space-x-2 bg-purple-950">
+                Tablets
+            </div>
+            <div class="font-bold text-xl mb-2">Top Releases 2024</div>
+            <p class="text-gray-700 text-base">
+                We went hands-on with the top tablets from Apple, Samsung, Amazon, and more to help you choose the best one for your needs.
+            </p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+            <button class="bg-white border-2 border-purple-950 text-purple-800 py-2 px-4 rounded-full">
+                Read more
+            </button>
+        </div>
+    </div>
+    <!-- tablets card ends here  -->
 
-		<!-- tablet devices card -->
-
-		<div class="bg-white">
-			<img src="tablet.jpg" alt="tablet" class="h-100 w-100" />
-			<h3
-				class="text-sm border-2 border-white text-white space-x-2 bg-purple-950"
-			>
-				Tablets
-			</h3>
-			<h2 class="font-bold">Top Releases 2024</h2>
-			<p>
-				We went hands-on with the top tablets from Apple, Samsung, Amazon, and
-				more to help you choose the best one for your needs.
-			</p>
-			<button class="bg-white border-2 border-purple-950 text-purple-800">
-				Read more
-			</button>
-		</div>
-
-		<!-- laptop devices card -->
-
-		<div class="bg-white">
-			<img src="laptop.jpg" alt="laptop" class="h-100 w-100" />
-			<h3
-				class="text-sm border-2 border-white text-white space-x-2 bg-purple-950"
-			>
-				Laptops
-			</h3>
-			<h2 class="font-bold">Top Releases 2024</h2>
-			<p>
-				One list of the top laptops we recommend, based on testing dozens of
-				models from Apple, HP, Lenovo, Microsoft and more.
-			</p>
-			<button class="bg-white border-2 border-purple-950 text-purple-800">
-				Read more
-			</button>
-		</div>
+    <!-- laptop card here  -->
+    <div class="max-w-sm rounded overflow-hidden shadow-lg mx-2 my-4 bg-white">
+        <img src="laptop.jpg" alt="laptop" class="w-full">
+        <div class="px-6 py-4">
+            <div class="text-center text-sm border-2 border-white text-white space-x-2 bg-purple-950">
+                Laptops
+            </div>
+            <div class="font-bold text-xl mb-2">Top Releases 2024</div>
+            <p class="text-gray-700 text-base">
+                One list of the top laptops we recommend, based on testing dozens of models from Apple, HP, Lenovo, Microsoft and more.
+            </p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+            <button class="bg-white border-2 border-purple-950 text-purple-800 py-2 px-4 rounded-full">
+                Read more
+            </button>
+        </div>
+    </div>
+</div>
+    <!-- laptop card ends here  -->
 
 		<!-- cards end here  -->
 		<section>
 			<!-- categories section  -->
 			<!-- mobile phones  -->
-			<div>
-				<img src="phones section.jpg" alt="flipphone" class="h-100 w-100" />
-				<a href="#" class="border-2 border-purple-950 bg-white"
+ <div class="flex flex-wrap justify-center">
+			<div class="max-w-sm rounded overflow-hidden shadow-lg mx-2 my-4 bg-white">
+                <div>
+				<img src="phones section.jpg" alt="flipphone" class="w-full" />
+				<a href="#" class="block text-center border-2 border-purple-950 bg-white"
 					>Mobile Phones</a
 				>
+                </div>
 			</div>
 			<!-- tablets  -->
-			<div>
-				<img src="tabletsection.jpg" alt="tablet" class="h-100 w-100" />
-				<a href="#" class="border-2 border-purple-950 bg-white">Tablets</a>
+			<div class="max-w-sm rounded overflow-hidden shadow-lg mx-2 my-4 bg-white">
+				<img src="tabletsection.jpg" alt="tablet" class="w-full"/>
+				<a href="#" class="block text-center border-2 border-purple-950 bg-white">Tablets</a>
 			</div>
 			<!-- laptops  -->
-			<div>
-				<img src="laptopsection.jpg" alt="laptop" class="h-100 w-100" />
-				<a href="#" class="border-2 border-purple-950 bg-white">Laptops</a>
+			<div class="max-w-sm rounded overflow-hidden shadow-lg mx-2 my-4 bg-white">
+				<img src="laptopsection.jpg" alt="laptop" class="w-full"/>
+				<a href="#" class="block text-center border-2 border-purple-950 bg-white">Laptops</a>
 			</div>
+ </div>
 
 			<!-- End of categories Section  -->
 		</section>
 
 		<!-- Recent posts  -->
 		<section>
-			<div>
+			<div class="font-bold text-center bg-violet-400 max-w-lg mx-auto">
 				<h2>Recent Posts</h2>
 			</div>
-			<div>
+			<div class="text-center bg-white max-w-lg mx-auto">
 				<h2>Samsung Galaxy s24 impressive camera</h2>
-				<p>Publication Date:Wed 15, 2024</p>
+				<p class="text-xs">Publication Date:Wed 15, 2024</p>
 			</div>
+    </div>
 			<!-- Recent posts  -->
 		</section>
 
 		<!-- form section  -->
 		<section>
-			<h2>Subscribe to my newsletter for the latest updates</h2>
+        <div class="text-center bg-purple-900 py-5 my-5 max-w-lg mx-auto text-white">
+			<h2 class="font-bold text-lg">Subscribe to my newsletter for the latest updates</h2>
 			<form action="">
 				<p>Sign up for more tech product news</p>
 				<label for="Email">User Email</label><br />
 				<input type="text" />
 			</form>
+        </div>
 		</section>
 		<!-- end of form section -->
 
